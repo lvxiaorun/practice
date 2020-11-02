@@ -20,6 +20,7 @@ func RemoveNthFromEnd(head *ListNode, n int) *ListNode {
 	return head
 }
 
+// 1 2 3 4 5
 func RemoveNthFromEnd2(head *ListNode, n int) *ListNode {
 	//先找到第n个结点
 	var nNode = head

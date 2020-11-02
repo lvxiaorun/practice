@@ -60,8 +60,8 @@ func LongestValidParentheses2(s string) int {
 			if i-ds[i-1]-1 >= 0 && s[i-ds[i-1]-1] == '(' {
 
 				ds[i] = ds[i-1] + 2
-				if i-ds[i-1] -2 >=0{
-					ds[i] = ds[i]+ds[i-ds[i-1] -2]
+				if i-ds[i-1]-2 >= 0 {
+					ds[i] = ds[i] + ds[i-ds[i-1]-2]
 				}
 			}
 

@@ -7,17 +7,17 @@ type People struct {
 
 type Option func(p *People)
 
-func WithName(name string) Option{
+func WithName(name string) Option {
 	return func(p *People) {
 		p.Name = name
 	}
 }
 
-func WithLike(like string) Option{
+func WithLike(like string) Option {
 	return func(p *People) {
 		p.Like = like
 	}
 }
-func NewPeople() *People{
-	return &People{Name:"lv",Like:"zt"}
+func NewPeople() *People {
+	return &People{Name: "lv", Like: "zt"}
 }

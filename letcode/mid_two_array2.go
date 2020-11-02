@@ -41,7 +41,7 @@ func FindMedianSortedArrays2(nums1 []int, nums2 []int) float64 {
 		lr := len(right)
 		//如果有任何一个长度为0
 		if len(left) == 0 {
-			if right[k-2] > vkpre{
+			if right[k-2] > vkpre {
 				vkpre = right[k-2]
 			}
 			right = right[k-1:]
@@ -50,7 +50,7 @@ func FindMedianSortedArrays2(nums1 []int, nums2 []int) float64 {
 		}
 
 		if len(right) == 0 {
-			if left[k-2] > vkpre{
+			if left[k-2] > vkpre {
 				vkpre = left[k-2]
 			}
 			left = left[k-1:]

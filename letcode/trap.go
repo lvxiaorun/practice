@@ -39,7 +39,7 @@ func areaSignle(str string) int {
 
 func Trap2(height []int) int {
 	l := len(height)
-	if l == 0{
+	if l == 0 {
 		return 0
 	}
 	var area int
